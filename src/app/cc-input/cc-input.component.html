@@ -8,9 +8,8 @@
     type="text"
   />
   <span matSuffix>
-    <div class="card-logo card-logo-unknown"></div>
-    <!-- {{ (expectedCardType$ | async)?.type }} -->
+    <div
+      class="card-logo small card-logo-{{ (expectedCardType$ | async)?.type }}"
+    ></div>
   </span>
 </mat-form-field>
-
-<div class="sample card-logo card-logo-unknown"></div>

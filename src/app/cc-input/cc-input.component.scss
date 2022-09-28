@@ -1,39 +1,39 @@
-
 .sample {
   display: inline;
 }
 .card-logo {
-  $width: 160px;
-  $height: 100px;
+  --width: 160px;
+  --height: 100px;
+  margin-left: 1rem;
   $path: '../../assets/cc-input';
   display: inline-block;
 
-  width: $width;
-  height: $height;
-  background-size: $width $height;
+  width: var(--width);
+  height: var(--height);
+  background-size: var(--width) var(--height);
 
   &.small {
-    width: $width / 3;
-    height: $height / 3;
-    background-size: $width / 3 $height / 3;
+    width: calc(var(--width) / 4);
+    height: calc(var(--height) / 4);
+    background-size: calc(var(--width) / 4) calc(var(--height) / 4);
   }
 
   &.large {
-    width: $width * 1.5;
-    height: $height * 1.5;
-    background-size: $width * 1.5 $height * 1.5;
+    width: calc(var(--width) * 1.5);
+    height: calc(var(--height) * 1.5);
+    background-size: calc(var(--width) * 1.5) calc(var(--height) * 1.5);
   }
 
   &.card-logo-visa {
-    background-image: url('../../assets/cc-input/unknown.svg');
+    background-image: url('../../assets/cc-input/visa.svg');
   }
 
   &.card-logo-mastercard {
-    background-image: url('../../assets/cc-input/unknown.svg');
+    background-image: url('../../assets/cc-input/mastercard.svg');
   }
 
-  &.card-logo-amex {
-    background-image: url('../../assets/cc-input/unknown.svg');
+  &.card-logo-american-express {
+    background-image: url('../../assets/cc-input/american-express.svg');
   }
 
   &.card-logo-unknown {
