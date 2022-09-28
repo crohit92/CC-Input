@@ -1,9 +1,14 @@
 @mixin createSizeVariant($width, $height) {
-  width: $width;
-  height: $height;
-  background-size: $width $height;
+  & {
+    width: $width;
+    height: $height;
+    background-size: $width $height;
+  }
 }
-:host ::ng-deep .card-logo {
+.sample {
+  display: inline;
+}
+.card-logo {
   $width: 160px;
   $height: 100px;
   $path: '../../assets/cc-input';

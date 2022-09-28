@@ -40,35 +40,35 @@ $theme: mat.define-light-theme(
   // height: $height;
   // background-size: $width $height;
 }
-.card-logo {
-  $width: 160px;
-  $height: 100px;
-  $path: './assets/cc-input';
-  // display: inline-block;
+// .card-logo {
+//   $width: 160px;
+//   $height: 100px;
+//   $path: './assets/cc-input';
+//   // display: inline-block;
 
-  @include createSizeVariant($width, $height);
+//   @include createSizeVariant($width, $height);
 
-  &.small {
-    @include createSizeVariant($width / 3, $height / 3);
-  }
+//   &.small {
+//     @include createSizeVariant($width / 3, $height / 3);
+//   }
 
-  &.large {
-    @include createSizeVariant($width * 1.5, $height * 1.5);
-  }
+//   &.large {
+//     @include createSizeVariant($width * 1.5, $height * 1.5);
+//   }
 
-  &.card-logo-visa {
-    background-image: url('../../assets/cc-input/unknown.svg');
-  }
+//   &.card-logo-visa {
+//     background-image: url('../../assets/cc-input/unknown.svg');
+//   }
 
-  &.card-logo-mastercard {
-    background-image: url('../../assets/cc-input/unknown.svg');
-  }
+//   &.card-logo-mastercard {
+//     background-image: url('../../assets/cc-input/unknown.svg');
+//   }
 
-  &.card-logo-amex {
-    background-image: url('../../assets/cc-input/unknown.svg');
-  }
+//   &.card-logo-amex {
+//     background-image: url('../../assets/cc-input/unknown.svg');
+//   }
 
-  &.card-logo-unknown {
-    background-image: url('../../assets/cc-input/unknown.svg');
-  }
-}
+//   &.card-logo-unknown {
+//     background-image: url('../../assets/cc-input/unknown.svg');
+//   }
+// }
