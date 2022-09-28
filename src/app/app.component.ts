@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
   group = new FormGroup({
-    input: new FormControl('4315810106847001', [Validators.required]),
+    input: new FormControl('', [Validators.required]),
   });
   constructor() {
     // this.group.get('input').disable();

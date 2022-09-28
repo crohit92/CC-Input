@@ -9,8 +9,9 @@
   />
   <span matSuffix>
     <div
-      class="card-logo small card-logo-{{ (expectedCardType$ | async)?.type }}"
+      class="card-logo small card-logo-{{
+        (expectedCardType$ | async)?.type ?? 'unknown'
+      }}"
     ></div>
   </span>
 </mat-form-field>
-{{ (expectedCardType$ | async)?.type }}
