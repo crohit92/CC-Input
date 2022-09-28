@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<form [formGroup]="group">
+  <app-cc-input formControlName="input"> </app-cc-input>
+</form>
+<!-- <input
+  formControlName="input"
+  mask="0000 - 0000 - 0000 - 0000"
+  value="4315810106847001"
+/> -->
+{{ group.get('input').value | json }}
