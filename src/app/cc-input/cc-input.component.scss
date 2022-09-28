@@ -14,14 +14,20 @@
   $path: '../../assets/cc-input';
   display: inline-block;
 
-  @include createSizeVariant($width, $height);
+  width: $width;
+  height: $height;
+  background-size: $width $height;
 
   &.small {
-    @include createSizeVariant($width / 3, $height / 3);
+    width: $width / 3;
+    height: $height / 3;
+    background-size: $width / 3 $height / 3;
   }
 
   &.large {
-    @include createSizeVariant($width * 1.5, $height * 1.5);
+    width: $width * 1.5;
+    height: $height * 1.5;
+    background-size: $width * 1.5 $height * 1.5;
   }
 
   &.card-logo-visa {
