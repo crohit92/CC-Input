@@ -1,10 +1,4 @@
-@mixin createSizeVariant($width, $height) {
-  & {
-    width: $width;
-    height: $height;
-    background-size: $width $height;
-  }
-}
+
 .sample {
   display: inline;
 }
